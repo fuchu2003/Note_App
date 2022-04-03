@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note</title>
+    <link rel="stylesheet" href="css/note.css">
+    <link rel="shortcut icon" href="image/1200px-Icon-notepad.svg.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div id="nav" class="nav">
+            <h1>Name that Note</h1>
+            <form id="search">
+                <input type="search" placeholder="Search" id="searchTxt">
+                <button>Search</button>
+            </form>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>Take Your Note</h1>
+            <hr>
+            <div class="note-card">
+                <h3>Add Your Note</h3>
+                <input type="text" name="title" id="title" placeholder="Add Your Title" required>
+                <textarea name="textarea" id="mainTxt" cols="30" rows="10" ></textarea>
+                <button class="all-btn" id="addBtn">Add</button>
+            </div>
+            <h1>Saved Notes</h1>
+            <hr>
+            <div class="notes-container" id="savedNotes"></div>
+        </div>
+    </section>
+
+
+    <script src="js/note.js"></script>
+    <script src="https://kit.fontawesome.com/19fb5e3787.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

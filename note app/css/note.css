@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: url(../image/kellen-riggin-CXzgJJWbdqg-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#nav {
+    
+    height: 10vh;
+    width: 100%;
+    padding: 0 6px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a272b;
+}
+
+#nav h1 {
+    font-family: 'Merienda', cursive;
+}
+
+#search input{
+    box-sizing: border-box;
+    padding: 2px;
+    border: 1px solid #fb9c5d;
+    outline: none;
+    border-radius: 10px;
+    width: 18vw;
+    height: 5vh;
+    text-align: center;
+    font-size: .9rem;
+    background: transparent;
+    transition: all linear .5s;
+    color: white;
+}
+
+#search input:hover{
+    border-radius: 15px;
+}
+
+#search button{
+    height: 5vh;
+    width: 8vw;
+    background: #fb9c5d;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+#search button:hover {
+    opacity: 0.8;
+}
+
+#home{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 2%;
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note-card textarea {
+    width:100%;
+    margin: 5px 0;
+    resize:vertical;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 1%;
+    font-size: .9rem;
+    background: transparent;
+    border: 1px solid #fb9c5d;
+    color: white;
+    border-radius: 10px;
+}
+
+#title {
+    width:40%;
+    margin: 5px 0;
+    resize:vertical;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 1%;
+    font-size: .9rem;
+    background: transparent;
+    border: 1px solid #fb9c5d;
+    color: white;
+    border-radius: 10px;
+}
+
+#title::placeholder {
+    color: white;
+    opacity: .5;
+}
+
+#addBtn{
+    width: 14%;
+    height: 3rem;
+    background-color: #fb9c5d;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#addBtn:hover {
+    opacity: 0.8;
+}
+
+.notes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.allNote {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 1%;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.allBtn{
+    width: 14%;
+    height: 5vh;
+    background-color: #fb9c5d;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1%;
+    font-size: 1rem;
+}
+
+.allBtn:hover{
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 660px) {
+    #nav {
+        flex-direction: column;
+        height: 17vh;
+        justify-content: space-evenly;
+    }
+    #search input{
+        width: 52vw;
+    }
+    #search button {
+        width: 18vw;
+    }
+    .container{
+        width: 90%;
+    }
+    #addBtn {
+        width: 28%;
+    }
+    .allBtn{
+        width: 21%;
+        height: 6vh;
+    }
+
+}
+
+
+
+ 
+
