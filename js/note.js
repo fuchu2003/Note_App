@@ -58,7 +58,7 @@ function saveNoteShow() {
         html += `
                     <div class="allNote">
                     <h3 id="noteHead">${element.title}</h3>
-                    <p id="note-text">${element.note}</p>
+                    <p id="note-text"><pre>${element.note}</pre></p>
                     <button class="allBtn" id="${index}" onClick = deleteThis(this.id)>Delete</button>
                     </div>
                 `;
